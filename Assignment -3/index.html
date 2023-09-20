@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EducateHub</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+     /* Custom CSS for the navigation bar */
+     .navbar {
+            background-color: #007bff; /* Change the background color */
+        }
+        .navbar-brand {
+            color: #fff; /* Change the brand text color */
+            font-size: 24px; /* Increase the font size */
+        }
+        .navbar-toggler-icon {
+            background-color: #fff; /* Change the color of the toggler icon */
+        }
+        .navbar-nav .nav-item {
+            padding: 0 15px; /* Add spacing between menu items */
+        }
+        .navbar-nav .nav-link {
+            color: #fff; /* Change the menu item text color */
+            font-weight: bold; /* Make the text bold */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffcc00; /* Change the color on hover */
+        }
+        /* Custom CSS for the hero section */
+        .hero {
+            background-image: url('https://img.freepik.com/free-psd/science-background-with-laboratory-equipment_23-2150181635.jpg?w=996&t=st=1694867172~exp=1694867772~hmac=cdfc4aa86317a7e97fa984285e482603a2fc402ac4d42cbc9f2b2ebe3b671255'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 150px 0; /* Add vertical padding */
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        .hero .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        .hero .btn-primary:hover {
+            background-color: #0056b3; /* Darker shade on hover */
+        }
+         /* Custom CSS for the Courses Section */
+         .courses {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+        .courses h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+        .card {
+            border: none;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-title {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+        .card-text {
+            font-size: 16px;
+        }
+        .btn-enroll {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+        .btn-enroll:hover {
+            background-color: #0056b3;
+        }
+        /* Custom CSS for the About Section */
+        .about {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+        }
+        .about h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .about p {
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+        /* Custom CSS for the Contact Section */
+        .contact {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+        .contact h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        textarea.form-control {
+            resize: none;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            font-weight: bold;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        /* Custom CSS for the Footer */
+        .footer {
+            background-color: #007bff;
+            padding: 20px 0;
+            color: #fff;
+        }
+        .footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Education Platform</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Courses</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container text-center">
+        <h1>Welcome to EducateHub</h1>
+        <p>Learn and grow with our wide range of courses</p>
+        <a href="#" class="btn btn-primary">Get Started</a>
+    </div>
+</section>
+
+<section class="courses">
+    <div class="container">
+        <h2>Popular Courses</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-photo/programming-background-collage_23-2149901765.jpg?w=740&t=st=1694867671~exp=1694868271~hmac=460eadd972eda48167b8f247b846ac69fa3f2e76bb0778f554bc792aee34e49a" class="card-img-top" alt="Course 1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+Computer Science</h5>
+                        <p class="card-text">The field of Computer Science focuses on the study of computers and computational systems. </p>
+                        <a href="#" class="btn btn-enroll">Enroll</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-photo/co-workers-working-together-sketch_1098-552.jpg?w=1060&t=st=1694867627~exp=1694868227~hmac=9ae40466cce7634ebe9448c75144325c7f61a9c32bc85167eb5278d7167bae31" class="card-img-top" alt="Course 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Engineering</h5>
+                        <p class="card-text">Engineering courses equip students with the knowledge and skills to design, build, and maintain structures. </p>
+                        <a href="#" class="btn btn-enroll">Enroll</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://img.freepik.com/free-photo/strategy-plan-is-help-business-development_53876-133861.jpg?w=996&t=st=1694867590~exp=1694868190~hmac=ab2b53613b85262bc14ba2669edb415fbc6637e936d720e6cafef19402041920" class="card-img-top" alt="Course 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Management</h5>
+                        <p class="card-text">Management courses provide students with a solid foundation in business principles and practices. </p>
+                        <a href="#" class="btn btn-enroll">Enroll</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>At our education platform, we are passionate about providing high-quality and accessible learning opportunities to learners of all ages and backgrounds. Our mission is to empower individuals with knowledge and skills that can transform their lives and contribute to the betterment of society.
+            We understand that education is a lifelong journey, and we strive to create a supportive and engaging environment that fosters continuous learning. Our platform offers a wide range of courses and resources, catering to diverse interests and learning needs. From academic subjects to professional development, personal growth to vocational skills, we aim to provide a comprehensive learning experience.
+
+        </p>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</section>
+
+  <!-- Your website content here -->
+
+  <footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2023 EducateHub. All rights reserved.</p>
+        <p>Designed with <span class="heart">&hearts;</span> by Ankita Panpatil</p>
+    </div>
+</footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script>
+    // Custom JavaScript code
+  </script>
+</body>
+
+</html>
